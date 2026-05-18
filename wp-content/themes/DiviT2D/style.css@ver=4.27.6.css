@@ -1,0 +1,539 @@
+/* 
+ Theme Name:   DiviT2D
+ Theme URI:    
+ Description:  
+ Author:       Powered Labs
+ Author URI:   http://www.poweredlabs.com
+ Template:     Divi
+ Version:      2.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+--------------------------------------------*/
+
+/* ------------------------ID Settings---------------------
+*/
+html {
+    margin-top: 0px !important;
+}
+
+#wpadminbar {
+    display: none!important;
+}
+
+#page-container {
+        padding-top: 100px !important;
+    }
+
+#top-header {
+    top: 0 !important;
+}
+#main-header {
+    top: 36px !important;
+}
+
+#et-top-navigation {
+    padding: 0;
+    padding-top: 0px !important;
+}
+
+#et-top-navigation nav > ul > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+
+#et-top-navigation nav > ul > li > a:hover {
+    color: white;
+}
+
+#top-menu-nav > a:hover,
+.mainli *,
+.mainli *:hover {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+#main-footer {
+    background: #070707;
+}
+#footer-bottom {
+    display: none;
+}
+#footer-widgets {
+    padding: 0;
+    padding-top: 30px;
+}
+
+#logo {
+    transition: .5s all ease;
+    opacity: 1;
+}
+#logo:hover {
+    opacity: .7;
+}
+
+/* TOP MENU COLORS */
+#top-menu > li:nth-child(1) > a:hover{
+background:#dd3333 !important;
+}
+#top-menu > li:nth-child(1) > a:before {
+  background: #fa4444;
+}
+
+#top-menu > li:nth-child(2) > a:hover{
+background:#f26100 !important;
+}
+#top-menu > li:nth-child(2) > a:before {
+  background: #ff7417 ;
+}
+
+
+#top-menu > li:nth-child(3) > a:hover{
+background:#2192c4 !important;
+}
+#top-menu > li:nth-child(3) > a:before {
+  background: #25a1d8;
+}
+
+#top-menu > li:nth-child(4) > a:hover{
+background:#00c290 !important;
+}
+
+#top-menu > li:nth-child(4) > a:before {
+  background: #01d09b;
+}
+
+#top-menu > li > a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  transition: top 0.11s ease-in !important;
+}
+
+#top-menu > li > a:hover:before {
+  top: 0;
+}
+
+#top-menu > li > a{
+position:relative;
+transition:         0.11s ease-in !important;
+  -o-transition:      0.11s ease-in !important;
+  -ms-transition:     0.11s ease-in !important;
+  -moz-transition:    0.11s ease-in !important;
+  -webkit-transition: 0.11s ease-in !important;
+}
+
+#green {
+color: #21c663;
+font-family: "Abel";
+font-size: 25px;
+}
+
+#et-info{
+float:none !important;
+text-align:center !important;
+}
+
+#et-secondary-menu{
+float:none !important;
+text-align:center !important;
+}
+
+/* -----------------------Class Settings-------------------
+*/
+
+.side-menu-button {
+    display: block;
+    pointer-events: none;
+}
+
+.et_divi_100_custom_back_to_top .et_pb_scroll_top {
+background: #00c290;
+}
+
+.et_pb_pagebuilder_layout.single-post #page-container .et_pb_with_background .et_pb_row { 
+width: inherit !important;
+}
+
+.mainli > li {
+    transition: .5s all ease;
+    padding: 0 !important;
+    background: #ffffff;
+    float: left;
+}
+.mainli > li:hover {
+    /*background: #00c290;*/
+}
+
+.mainli > li > a {
+    color: #808080 !important;
+    display: inline-block;
+    width: 100%;
+}
+.mainli > li:hover > a,
+a.open-panel,
+a.close-panel {
+    display: none;
+}
+
+.footlink {
+    font-weight: bold;
+    transition: .2s all ease;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+.footlink:hover {
+    color: #00c290 !important;
+}
+
+.footer-widget,
+.footer-widget:nth-child(n) {
+    margin-bottom: 10px !important;
+    width: 100% !important;
+}
+.fwidget.widget_text {
+    float: none !important;
+    text-align: center;
+    font-size: 11.5pt;
+}
+.foot-social {
+    margin: 3px;
+    transition: .5s all ease;
+    display: inline-block;
+    width: 4vw;
+    height: 2vw;
+    min-width: 75px;
+    min-height: 35px;
+    border: 1px solid white;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+    background-position: center center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    transform: scale(1);
+}
+.foot-social:hover {
+    transform: scale(1.1);
+}
+.foot-social-fb {
+    background-image: url('/wp-content/uploads/2016/03/facebook-white.png');
+}
+.foot-social-fb:hover {
+    background-color: #3b5998;
+    border: 1px solid #3b5998;
+}
+.foot-social-gp {
+    background-image: url('/wp-content/uploads/2016/03/googleplus-white.png');
+    background-position: 50% 55%;
+}
+.foot-social-gp:hover {
+    background-color: #d34836;
+    border: 1px solid #d34836;
+}
+.foot-social-tw {
+    background-image: url('/wp-content/uploads/2016/03/twitter-white.png');
+}
+.foot-social-tw:hover {
+    background-color: #00aced;
+    border: 1px solid #00aced;
+}
+.side-logo {
+    transition: .2s all ease;
+    opacity: .7;
+}
+.side-logo:hover {
+    opacity: 1;
+}
+
+.tablefoot {
+    width: 100%;
+    border: 0px;
+}
+.tablefoot td {
+    text-align: left;
+    width: 25%;
+    vertical-align: top;
+    padding-bottom:1vmin;
+}
+.footer-widget .textwidget {
+    color: grey;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+}
+
+.current-menu-item,
+.current-menu-item > a,
+.et-fixed-header #top-menu li.current-menu-item > a,
+#top-menu li.current-menu-item > a {
+    color: white !important;
+    background: #00c290 !important;
+}
+a,a:link,a:visited{color:#00c290; }
+
+.fancy {
+    font-family: "Science Fair Light";
+    font-size: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+}
+
+.et_fullwidth_nav #main-header .container {
+    padding-left:10px;
+    padding-right:0px;
+    height: 100%;
+}
+
+.et_right_sidebar #left-area{
+float: none;
+padding-right: 0px;
+}
+
+.et_right_sidebar #main-content .container:before {
+display:none;
+right:0;
+}
+
+.social-sharing a{
+color: white !important;
+text-align:center !important;
+}
+
+.aboutauthor {
+line-height: 0px !important;
+}
+
+.hoverlay-o {
+    margin-top:20px;
+    position:relative;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color:rgba(137,137,137,0.3);
+}
+.hoverlay-o:hover {
+    background-color:rgba(255,114,0,.8);
+  transition: .5s ease;
+
+}
+.hoverlay-o > div {
+    position:absolute;
+    color:#fff;
+    font:50px sans-serif;
+    width:100%;
+    top:33%;
+    text-align:center;
+}
+.hoverlay-o > span {
+    position:absolute;
+    color:#fff;
+    font:12px sans-serif;
+    width:100%;
+    top:-20%;
+    text-align:center;
+}
+
+.h20 {
+  display: flex;
+  flex-direction: row;
+}
+.h20:before, .h20:after{
+  content: "";
+  flex: 1 1;
+    border-top: 4px double #ffffff;
+  margin: auto;
+}
+
+
+/*** adjust padding on menu ***/
+.et_header_style_left .et-fixed-header #et-top-navigation {
+    padding: 0;
+    padding-top: 0px !important;
+    height: 100%;
+}
+.et_header_style_left .et-fixed-header #et-top-navigation nav > ul > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.et-fixed-header #top-menu-nav{
+    height: 100%;
+}
+
+.et-fixed-header #top-menu{
+    height: 100%;
+}
+.et-fixed-header #top-menu li{
+    height: 100%;
+}
+
+.et-fixed-header #top-menu li a:hover {
+    color: white !important;
+}
+
+.et-fixed-header #top-menu > a:hover {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+#top menu li {
+padding: 0 0px !important;
+}
+ 
+.et_header_style_left #et-top-navigation {
+padding-top: 0px;
+}
+ 
+.mainli a {
+z-index:2;
+}
+
+.et_post_meta_wrapper img {
+max-height:70vh !important;
+width:auto;
+}
+
+.column.size-1of3{
+    width: auto;
+    padding: 10px !important;
+}
+
+.column.size-1of2{
+    width: auto;
+    padding: 10px !important;
+}
+
+.column.size-1of1{
+    width: 100% !important;
+}
+
+.et_pb_post{
+    margin-bottom: 40px !important;
+}
+
+.et_pb_gutter.et_pb_gutters1 #left-area {
+    width: 100%;
+}
+
+.container.clearfix.et_menu_container {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    }
+    
+/* ----------------------- View Settings-------------------
+*/
+
+
+/* @media only screen {
+    #content {
+        padding-top: 0;
+    }
+    #side-nav {
+        width: 250px;
+        position: absolute;
+        left: -250px;
+        top: 0;
+        height: 100%;
+        background: linear-gradient(to right, #0a0a0a 60%, #050505);
+    }
+}
+*/
+
+@media only screen and (min-width: 981px){
+    .et_header_style_left #et-top-navigation nav > ul > li > a,
+    .et_header_style_split #et-top-navigation nav > ul > li > a {
+    padding-bottom: 35px;
+    }
+    .side-menu-button {
+        display: none;
+    }
+    #left-area {
+    width:100%;
+    }
+}
+
+/*** add shadow to fixed header ***/
+@media (min-width: 981px) {
+#main-header.et-fixed-header {
+    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
+    -webkit-box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
+    -moz-box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
+    height: 59px !important;
+}
+}
+
+@media only screen and (max-width: 980px) {
+    .et_menu_container {
+        height: 100px !important;
+    }
+    #logo {
+        max-width: 75% !important;
+    }
+    .logo_container {
+        text-align: left;
+        margin-left: 5px !important;
+        padding-right: 0px;
+    }
+}
+
+
+@media (max-width: 980px) {
+    #main-footer > container {
+        width: 97% !important;
+    }
+    #page-container {
+        padding-top: 0px !important;
+    }
+}
+
+
+@font-face {
+    font-family: "Science Fair Light";
+    src: url("/wp-content/uploads/2016/05/science-fair-light.woff") format('woff');
+}
+
+
+@media screen and (max-width: 980px) {
+.fancy{
+    font-size: 50px !important;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+.fancy{
+    font-size: 40px !important;
+}
+}
+
+
+@media screen and (min-width: 980px){
+.tablefoot td{
+font-size:16pt;
+}
+}
+
+
+/*** style the mobile menu links and button ***/
+@media (max-width: 980px) {
+.et_mobile_menu li {
+text-align: right;
+}
+ 
+.et_mobile_menu li a {
+border-bottom: none;
+}
+.et_mobile_menu li a:hover {
+background-color: transparent;
+}
+}
+
